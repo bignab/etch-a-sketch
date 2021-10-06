@@ -1,0 +1,17 @@
+#container {
+    display: grid;
+    justify-content: center;
+}
+
+.gridCell {
+    height: 40px;
+    width: 40px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.hoveredCell {
+    background-color: grey;
+}
