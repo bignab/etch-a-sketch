@@ -1,17 +1,72 @@
-#container {
-    display: grid;
+body {
+    background-color: #EFE7F8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #522882;
+    font-size: 40px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    overflow: visible;
+    box-shadow: #522882 10px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: #522882 10px 10px;
+}
+
+button:active {
+    background-color: #AF89DB;
+    box-shadow: #383838 10px 10px;
+    color: white;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    width: 200px;
+    margin-right: 50px;
+}
+
+#rightMenu {
+    width: 200px;
+    margin-left: 50px;
+}
+
+#siteContainer {
+    display: flex;
     justify-content: center;
 }
 
+#container {
+    display: grid;
+    height: 70vh;
+    width: 70vh;
+    margin: 0; /* no idea why this work */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .gridCell {
-    height: 40px;
-    width: 40px;
     border: 1px;
-    border-color: black;
-    border-style: solid;
+    border-color: rgba(109, 109, 109, 0.61);
+    border-style: dotted;
     text-align: center;
+    background-color: white;
 }
 
 .hoveredCell {
-    background-color: grey;
+    background-color: #7036B1;
 }

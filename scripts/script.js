@@ -1,5 +1,3 @@
-createDivGrid(16,16);
-
 function createDivGrid(gridSizeX, gridSizeY) {
     let divGrid = [];
     for (let i = 0; i < gridSizeX; i++) {
@@ -32,4 +30,14 @@ function placeDivGridIntoDOM(gridSizeX, gridSizeY, filledDivGrid) {
             container.appendChild(filledDivGrid[i][j]);
         }
     }
+}
+
+function clearDivGrid() {
+    const container = document.querySelector('#container');
+    let containerChildren = container.childNodes;
+    containerChildren.forEach(function(currentValue) {
+        if (currentValue.nodeType === Node.ELEMENT_NODE) {
+            currentValue.classList.remove("hoveredCell");
+        }
+    });
 }
