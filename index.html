@@ -17,7 +17,7 @@
     </header>
     <div id="siteContainer">
         <div id="menu">
-            <button id="monochromeButton">
+            <button id="monochromeButton" class="monochromeToggle">
                 MONOCHROME
             </button>
             <button id="colourButton">
@@ -30,6 +30,15 @@
         <div id="container">
         </div>
         <div id="rightMenu">
+            <p id="gridSizeText">
+                16 x 16
+            </p>
+            <div class="slideContainer">
+                <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
+              </div>
+            <button id="setGridButton">
+                SET GRID
+            </button>
         </div>
     </div>
 </body>

@@ -23,7 +23,6 @@ button {
 
 button:hover {
     transform: scale(1.05);
-    box-shadow: #522882 10px 10px;
 }
 
 button:active {
@@ -42,8 +41,12 @@ button:active {
 }
 
 #rightMenu {
+    display: flex;
+    flex-direction: column;
     width: 200px;
     margin-left: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 #siteContainer {
@@ -67,6 +70,56 @@ button:active {
     background-color: white;
 }
 
-.hoveredCell {
-    background-color: #7036B1;
+.monochromeToggle {
+    background-color: #AF89DB;
+    box-shadow: #383838 10px 10px;
+    color: white;
+}
+
+.colourToggle {
+    background-color: #AF89DB;
+    box-shadow: #383838 10px 10px;
+    color: white;
+}
+
+.slideContainer {
+    display: flex;
+    margin: 0;
+    align-self: center;
+}
+
+#myRange {
+    width: 200px;
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 5px;  
+    background: #522882;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#myRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background:white;
+    cursor: pointer;
+  }
+
+#myRange::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    background: #AF89DB;
+    cursor: pointer;
+}
+
+#gridSizeText {
+    font-size: 24px;
 }
